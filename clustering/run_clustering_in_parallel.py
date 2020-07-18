@@ -1,5 +1,5 @@
 #
-# This script load MD trajectories and clustering frame/snapshots
+# This script loads MD trajectories and clusters frame/snapshots
 #
 # trajectories were loaded by using mdtraj 
 # clustering was performed by using msmbuilder
