@@ -1,3 +1,7 @@
+######################################
+### By Jingjing Huang
+###
+
 import mdtraj as md
 from numpy import linalg as LA
 import numpy as np
