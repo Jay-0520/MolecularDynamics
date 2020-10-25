@@ -28,6 +28,3 @@ for group in group_id:
 
 
 
-
-
-
