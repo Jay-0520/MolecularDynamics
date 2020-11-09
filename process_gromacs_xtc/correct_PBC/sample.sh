@@ -17,7 +17,6 @@ para=/home/jjhuang/melittin_poration/melittin_mixed/result_analysis/set_up_analy
 
 path=/scratch/jjhuang/projects/melittin_poration/melittin_mixed
 
-#para=/scratch/jjhuang/projects/melittin_poration/melittin_mixed
 cont_list=( cont0time cont1time cont2time )
 
 for numT in {TTT..TTT}
