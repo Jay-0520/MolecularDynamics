@@ -1,3 +1,29 @@
+# ---------------------------------------------------------------------------                         
+# This bash script centers the cylinder of water molecules in the MD simulation 
+# box. This bash takes as input the output from the python script "python_add_
+# psudo_points_41pts.py"
+#
+# Specifically, this script centers the cylinder of water/the pore formed 
+# during simulations of membrane systems. The strategy is: 1. compute
+# the center of mass (COM) of the membrane (e.g., the octane slab in this 
+# script); 2. define a 2D x-y plane (or a very thin rectangular), with z set
+#  at the z value of the COM of the membrane; 3. find xy values of water 
+# molecules on the plane (within in the rectangular); 4. define 41 points on 
+# the plane to place an ion or an atom of any other type that is defined in 
+# force field; 5. define a cutoff to compute number of water molecules within
+# the defined cutoff distance of each of the 41 points and find the one that 
+# has the largest number of neighboring water molecules; 6. the point from step
+# 5 is the point representing the center of the slice of the water cylinder 
+# on the 2D x-y plance and will be used for centering the the water cylinder 
+# in the MD simulation box. 
+#
+# Writting by Jingjing Huang on Nov, 2020
+# email jjhuang0520@outlook.com
+# ---------------------------------------------------------------------------
+
+
+
+
 #!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks=12
